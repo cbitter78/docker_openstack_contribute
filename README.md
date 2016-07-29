@@ -1,2 +1,23 @@
-# openstack_contribute
-Docker container that is loaded with all the tools you need to contribute to OpenStack
+# Openstack Contributer Container
+
+This is a Docker Container that is loaded with the tools you will need to do openstack community work.   At times the tools you need to get going can be a PITA to say the least.   I created this container to make it easy to do community devlopment no matter where I am. 
+
+
+## Building
+
+```shell
+make build
+```
+
+### Running
+
+This will mount your home folder under /$USER and will copy your .ssh folder under /root/.ssh
+so you can interact with git.  You can also edit files on your computer and access them in the 
+container via the /%USER folder.
+
+```shell
+make run
+
+```
+
+
