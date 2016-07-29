@@ -1,6 +1,6 @@
 FROM ubuntu
 
-MAINTAINER Charles Bitter "charles_bitter@cbitter78@gmail.com"
+MAINTAINER Charles Bitter "cbitter78@cbitter78@gmail.com"
 
 # Install base os tools that are needed
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update
@@ -11,11 +11,11 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get install -y python2.7 python2.7-dev libpython2.7-dev libssl-dev libffi-dev \
-                     python-pip python-dev build-essential
+                     python-pip python-dev build-essential python-tox
 
 RUN pip install --upgrade pip && pip install --upgrade virtualenv 
 
-RUN pip install git-review
+RUN pip install git-review pep8
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y  \
  	python-ceilometerclient \
@@ -30,6 +30,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y  \
  	python-troveclient \
  	python-openstackclient
 
+ADD vimrc /root/.vimrc
 ADD run.sh /run.sh
 CMD /run.sh
 RUN chmod +x /run.sh
