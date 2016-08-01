@@ -1,6 +1,6 @@
 # Openstack Contributer Container
 
-This is a Docker Container that is loaded with the tools you will need to do openstack community work.   At times the tools you need to get going can be a PITA to say the least.   I created this container to make it easy to do community devlopment no matter where I am. 
+This is a Docker Container that is loaded with the tools you will need to do openstack community work.   At times the tools you need to get going can be a PITA to say the least.   I created this container to make it easy to do community development no matter where I am. 
 
 Here are some helpful links to get you started contributing to OpensStack
 

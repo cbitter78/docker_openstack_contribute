@@ -1,6 +1,6 @@
 VERSION=0.0.1
 RELEASE=0
-NAME=openstack_contribute
+NAME=cbitter78/os_contribute
 
 COLOR_NORMAL=""
 COLOR_RESET="\033[m"
@@ -21,4 +21,4 @@ run: build
 
 publish: build
 	@echo ${COLOR_BOLD}➭${COLOR_RESET} ${COLOR_GREEN}Publishing Version ${NAME}:${VERSION}-${RELEASE}${COLOR_RESET}
-	@docker push cbitter78/${NAME}:${VERSION}-${RELEASE}
+	@docker push ${NAME}:${VERSION}-${RELEASE}
