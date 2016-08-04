@@ -6,7 +6,8 @@ Here are some helpful links to get you started contributing to OpensStack
 
 - [Developers Guide](http://docs.openstack.org/infra/manual/developers.html#starting-a-change)
 - [Contributor Guide](http://docs.openstack.org/contributor-guide/quickstart/first-timers.html)
-
+- [Submitting a change for review](http://docs.openstack.org/infra/manual/developers.html#submitting-a-change-for-review)
+- [RST (docs) guild](http://docs.openstack.org/contributor-guide/rst-conv/references.html)
 
 ## Building
 

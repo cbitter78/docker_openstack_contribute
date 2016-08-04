@@ -11,11 +11,11 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-get install -y python2.7 python2.7-dev libpython2.7-dev libssl-dev libffi-dev \
-                     python-pip python-dev build-essential python-tox
+                     python-pip python-dev build-essential python-tox python-sphinx
 
 RUN pip install --upgrade pip && pip install --upgrade virtualenv 
 
-RUN pip install git-review pep8
+RUN pip install git-review pep8 Flask
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install -y  \
  	python-ceilometerclient \
