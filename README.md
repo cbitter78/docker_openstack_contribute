@@ -23,6 +23,12 @@ so you can interact with git.  You can also edit files on your computer and acce
 container via the /%USER folder.
 
 ```shell
+docker run --rm -ti --env=DOCKER_USER=$USER --volume $PWD:/`basename $PWD` --volume ~/:/$USER cbitter78/os_contribute:0.0.2-0
+```
+
+or
+
+```shell
 make run
 
 ```

@@ -1,4 +1,4 @@
-VERSION=0.0.1
+VERSION=0.0.2
 RELEASE=0
 NAME=cbitter78/os_contribute
 
